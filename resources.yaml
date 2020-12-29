@@ -68,12 +68,15 @@ metadata:
   namespace: kube-traffic-generator
 data:
   petclinic-config: |
-    apiVersion: apps/v1beta1
+    apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: spring-petclinic-web
       namespace: kube-traffic-generator
     spec:
+      selector:
+        matchLabels:
+          app: petclinic
       replicas: 2
       template:
         metadata:
