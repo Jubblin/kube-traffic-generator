@@ -14,6 +14,8 @@ kind: Pod
 metadata:
   name: traffic-generator
   namespace: kube-traffic-generator
+  labels:
+    app: traffic-generator
 spec:
   serviceAccount: traffic-generator-service-account
   containers:
