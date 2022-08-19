@@ -1,0 +1,22 @@
+apiVersion: cilium.io/v2
+kind: CiliumIdentity
+metadata:
+  creationTimestamp: '2022-08-19T12:21:54Z'
+  generation: 1
+  labels:
+    app: traffic-generator
+    app.kubernetes.io/instance: traffic-generator
+    io.cilium.k8s.policy.cluster: k3s-ha
+    io.cilium.k8s.policy.serviceaccount: traffic-generator-service-account
+    io.kubernetes.pod.namespace: kube-traffic-generator
+  name: '44339'
+  resourceVersion: '313756'
+  uid: 23b8dbfa-0b1b-430f-94a5-589a398a2eae
+security-labels:
+  'k8s:app': traffic-generator
+  'k8s:app.kubernetes.io/instance': traffic-generator
+  'k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/instance': traffic-generator
+  'k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name': kube-traffic-generator
+  'k8s:io.cilium.k8s.policy.cluster': k3s-ha
+  'k8s:io.cilium.k8s.policy.serviceaccount': traffic-generator-service-account
+  'k8s:io.kubernetes.pod.namespace': kube-traffic-generator
